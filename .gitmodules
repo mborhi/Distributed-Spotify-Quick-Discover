@@ -1,0 +1,3 @@
+[submodule "retrieval-service"]
+	path = retrieval-service
+	url = https://github.com/mborhi/retrieval-service
