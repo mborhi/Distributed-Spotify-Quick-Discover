@@ -1,3 +1,6 @@
 [submodule "retrieval-service"]
 	path = retrieval-service
 	url = https://github.com/mborhi/retrieval-service
+[submodule "playback-service"]
+	path = playback-service
+	url = https://github.com/mborhi/playback-service
