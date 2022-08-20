@@ -4,3 +4,6 @@
 [submodule "playback-service"]
 	path = playback-service
 	url = https://github.com/mborhi/playback-service
+[submodule "api-gateway"]
+	path = api-gateway
+	url = git@github.com:mborhi/api-gateway.git
