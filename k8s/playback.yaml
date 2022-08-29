@@ -24,7 +24,7 @@ spec:
     spec:
       containers:
         - name: playback-service
-          image: mborhi/spotify-quick-discover/playback-service
+          image: mborhi/spotify-quick-discover-playback-svc
           resources:
             limits:
               memory: "128Mi"

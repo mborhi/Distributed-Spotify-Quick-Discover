@@ -3,6 +3,7 @@ kind: Service
 metadata:
   name: auth-service
 spec:
+  type: LoadBalancer
   selector:
     app: auth-service
   ports:
@@ -24,7 +25,7 @@ spec:
     spec:
       containers:
         - name: auth-service
-          image: mborhi/spotify-quick-discover/auth-service
+          image: mborhi/spotify-quick-discover-auth-svc
           resources:
             limits:
               memory: "128Mi"

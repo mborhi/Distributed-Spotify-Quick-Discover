@@ -3,6 +3,7 @@ kind: Service
 metadata:
   name: quick-discover-ui
 spec:
+  type: LoadBalancer
   selector:
     app: quick-discover-ui
   ports:
@@ -24,10 +25,10 @@ spec:
     spec:
       containers:
         - name: quick-discover-ui
-          image: mborhi/spotify-quick-discover/quick-discover-ui
+          image: mborhi/spotify-quick-discover-ui
           resources:
             limits:
-              memory: "128Mi"
+              memory: "512Mi"
               cpu: "500m"
           ports:
             - containerPort: 3000
