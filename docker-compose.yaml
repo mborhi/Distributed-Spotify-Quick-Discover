@@ -32,6 +32,6 @@ services:
 
   quick-discover-ui:
     build:
-      context: ../spotify-quick-discover-frontend/
+      context: ./spotify-quick-discover-frontend/
     ports:
       - "3000:3000"
