@@ -10,3 +10,6 @@
 [submodule "auth-service"]
 	path = auth-service
 	url = git@github.com:mborhi/auth-service.git
+[submodule "spotify-quick-discover-frontend"]
+	path = spotify-quick-discover-frontend
+	url = git@github.com:mborhi/spotify-quick-discover-frontend.git
