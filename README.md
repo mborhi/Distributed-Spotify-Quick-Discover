@@ -1,6 +1,6 @@
 # Distributed Spotify Quick Discover
 
-A web app allowing users to quickly discover and svae music from Spotify categories and genres.
+A web app allowing users to quickly discover and svae music from Spotify categories and genres. Documentation for API can be found on the [Spotify Quick Discover Microservices](https://www.postman.com/research-operator-51189562/workspace/spotify-quick-discover-microservices/overview) Postman workspace.
 
 ## Table of Contents
 
@@ -8,6 +8,10 @@ A web app allowing users to quickly discover and svae music from Spotify categor
     - [Kubernetes](#kubernetes)
     - [Docker](#docker)
 * [Architecture](#architecture)
+    - [Retrieval Service](#retrieval-service)
+    - [Playback Service](#playback-service)
+    - [Authentication Service](#authentication-service)
+    - [API Gateway](#api-gateway)
 * [Work Process](#work-process)
 * [Updates](#updates)
 
@@ -60,3 +64,61 @@ You can verify that all services and deployments are no longer running by enteri
 
 You may also run this application by using docker-compose.
 
+To do this, first make sure you have docker command tools installed your machine. Verify this by entering the following command in your terminal:
+
+```
+docker --version
+```
+
+If you get an error, you can install it on the official [Docker page](https://www.docker.com/get-started/).
+
+To orchestrate the required containers, first make sure that all the images have beein pulled from `mborhi/spotify-quick-discover-*`, or that all the images are accessible from the directory containing the docker-compose file.
+Now, in the directory containing the `docker-compose.yaml`, you can run:
+
+```
+docker-compose up --build
+```
+
+You can now open http://localhost:3000 in your preferred browser to use the app.
+
+To stop the containers, run:
+
+```
+docker-compose down
+```
+
+Alternatively, you can complete these steps using the [Docker Desktop](https://www.docker.com/products/docker-desktop/) app.
+
+---
+
+# Architecture
+
+This sections describes the distrubuted architecture of this project.
+
+The high level architecture can be visualized as such:
+
+[image]
+
+
+## Retrieval Service
+
+## Playback Service
+
+## Authentication Service
+
+## API Gateway
+
+---
+
+# Work Process
+
+I first began by creating a monolith version of this app.
+
+...
+
+The full documentation for my work process can be found in the [WorkProcess.md](./WorkProcess.md) file.
+
+---
+
+
+# Updates
