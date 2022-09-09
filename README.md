@@ -102,19 +102,31 @@ The high level architecture can be visualized as such:
 
 ## Retrieval Service
 
+For a more details, please see the retrieval service GitHub page: [https://github.com/mborhi/retrieval-service](https://github.com/mborhi/retrieval-service)
+
 ## Playback Service
+
+Handles the song playbacks.
+
+For more details, please see the playback service GitHub page: [https://github.com/mborhi/playback-service](https://github.com/mborhi/playback-service)
 
 ## Authentication Service
 
+Handles the authentication required to access various services.
+
+For more details, please see the authentication service GitHub page: [https://github.com/mborhi/auth-service](https://github.com/mborhi/auth-service)
+
 ## API Gateway
 
+The single entry point for all clients; 
+
+For more details, please see the api-gateway service GitHug page: [https://github.com/mborhi/api-gateway](https://github.com/mborhi/api-gateway)
 ---
 
 # Work Process
 
-I first began by creating a monolith version of this app.
-
-...
+I first began by creating a monolith version of this app. This version consisted of a single API exposing several endpoints. I noticed that many of these endpoints were indpendent of each other. Additionally, I noticed that some endpoints would be used more than others. Given these observations, it would be very inefficient to scale this app if needed. For this reason, I decided to reconstruct the architecture of the app to be ___distributed___. Having distinct services for each larger feature of the app, allows for several things. They can be developed independently of each other, they can be scaled individually according to needs.
+Thus, I broke the monolith application into __5 microservices__: a frontend service, an api gateway service, an authentication service, a playback service, and a retrieval service.
 
 The full documentation for my work process can be found in the [WorkProcess.md](./WorkProcess.md) file.
 
